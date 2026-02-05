@@ -18,6 +18,10 @@ struct Err{T} <: Result
 end
 
 Ok() = Ok(nothing)
+Err() = Err(nothing)
+
+Base.:(==)(a::Ok{T}, b::Ok{T}) where {T} = (a.value == b.value)
+Base.:(==)(a::Err{T}, b::Err{T}) where {T} = (a.value == b.value)
 
 is_ok(result::Result) = result isa Ok
 is_err(result::Result) = !is_ok(result)

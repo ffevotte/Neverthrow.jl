@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["François Févotte <francois.fevotte@elmy.fr>"]
 
 [workspace]
-projects = ["docs"]
+projects = ["docs", "test"]

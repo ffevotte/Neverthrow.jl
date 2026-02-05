@@ -1,0 +1,6 @@
+[deps]
+Neverthrow = "18968252-41be-40c3-9568-8672ff2df921"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[sources]
+Neverthrow = {path = ".."}
